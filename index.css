@@ -12,7 +12,7 @@
 /* ul>li>button>.dropdown-item:hover{
     background-color: #71acea;
 } */
- .break{
+ .expo-title{
     background-color:#BC067E;
     width: 100%;
     height: 80px;
@@ -55,17 +55,25 @@
         border-style: solid;
     }
 /* second section */
-.regimg{
-    width: 100%;
-    height: 800px;
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
     
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 1 /1  / 1; }
+    .div3 { grid-area: 1 / 2 / 3 / 3; }
+.gridPic{
+    margin-top: 10%;
+    width: 500px;
+    height: 200px;
 }
-.regsec{
-     background-image: url('./media/sdksignup.JPG');
-    background-size: cover; 
-    height: 700px; 
-    width: 900px;
-
+.gridPicBig{
+    width: 500px;
+    height: 500px;
 }
 .regbtn {
     -webkit-border-radius: 28;
@@ -108,3 +116,32 @@
           font-size: 17px;
           font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
         }
+
+        .parent2 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            color: #ffffff;
+            }
+            
+            .div11 { grid-area: 1 / 1 / 2 / 2; }
+            .div22 { grid-area: 1 / 2 / 2 / 3; }
+            .div33 { grid-area: 1 / 3 / 2 / 4; }
+.call{
+    margin-top: 10%;
+}
+.copy{
+    margin-right: 5%;
+    padding: 5%;
+}
+.email{
+    margin-top: 10%;
+    margin-left: 3%;
+    color: #ffffff;
+    text-decoration: none;
+}
+.Social{
+    margin-left: 2%;
+}
